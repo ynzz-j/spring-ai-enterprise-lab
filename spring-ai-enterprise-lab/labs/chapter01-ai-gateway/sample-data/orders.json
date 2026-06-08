@@ -1,0 +1,17 @@
+[
+  {
+    "orderId": "O202606050001",
+    "customerName": "张三",
+    "mobile": "13800000000",
+    "status": "DELAYED",
+    "description": "客户反馈订单延迟发货，希望今天给出处理方案。"
+  },
+  {
+    "orderId": "O202606050002",
+    "customerName": "李四",
+    "mobile": "13900000000",
+    "status": "REFUND_REQUESTED",
+    "description": "客户要求退款，原因是商品到货时间超过预期。"
+  }
+]
+

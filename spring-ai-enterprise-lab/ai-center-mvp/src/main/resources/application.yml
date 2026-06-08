@@ -1,0 +1,15 @@
+server:
+  port: ${AI_CENTER_PORT:18080}
+
+spring:
+  application:
+    name: ai-center-mvp
+  ai:
+    openai:
+      api-key: ${SPRING_AI_OPENAI_API_KEY:demo-key}
+      chat:
+        options:
+          model: ${SPRING_AI_OPENAI_CHAT_MODEL:gpt-4o-mini}
+
+ai-center:
+  mode: ${AI_CENTER_MODE:demo}

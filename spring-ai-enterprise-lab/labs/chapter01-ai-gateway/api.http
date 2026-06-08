@@ -1,0 +1,22 @@
+### Chapter 01 - Order summary
+POST http://localhost:8081/ai/tasks/order-summary
+Content-Type: application/json
+
+{
+  "tenantId": "demo",
+  "operatorId": "u1001",
+  "orderId": "O202606050001",
+  "orderText": "客户反馈订单延迟发货，希望今天给出处理方案。手机号 13800000000"
+}
+
+### Chapter 01 - Expected fallback scenario
+POST http://localhost:8081/ai/tasks/order-summary
+Content-Type: application/json
+
+{
+  "tenantId": "demo",
+  "operatorId": "u1001",
+  "orderId": "O202606050002",
+  "orderText": "模型不可用时，系统应该返回固定降级建议。"
+}
+
