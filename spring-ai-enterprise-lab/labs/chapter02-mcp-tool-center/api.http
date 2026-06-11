@@ -1,0 +1,20 @@
+### Chapter 02 - Ask with MCP tools
+POST http://localhost:8081/ai/tools/ask
+Content-Type: application/json
+
+{
+  "tenantId": "demo",
+  "operatorId": "u1001",
+  "question": "帮我查询 O202606050001 这个订单现在有什么异常"
+}
+
+### Chapter 02 - Reject write intent
+POST http://localhost:8081/ai/tools/ask
+Content-Type: application/json
+
+{
+  "tenantId": "demo",
+  "operatorId": "u1001",
+  "question": "把 O202606050001 订单状态改成已发货"
+}
+

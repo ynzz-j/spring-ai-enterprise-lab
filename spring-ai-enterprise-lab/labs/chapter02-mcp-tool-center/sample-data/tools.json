@@ -1,0 +1,16 @@
+[
+  {
+    "name": "queryOrder",
+    "mode": "READ_ONLY",
+    "description": "查询订单基础信息和异常状态",
+    "requiredArgs": ["tenantId", "orderId"],
+    "sensitiveFields": ["customerMobile", "address"]
+  },
+  {
+    "name": "checkInventory",
+    "mode": "READ_ONLY",
+    "description": "查询商品库存是否充足",
+    "requiredArgs": ["tenantId", "productId"]
+  }
+]
+
