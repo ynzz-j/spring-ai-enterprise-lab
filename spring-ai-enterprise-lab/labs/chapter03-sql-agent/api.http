@@ -1,0 +1,20 @@
+### Chapter 03 - Safe SQL query
+POST http://localhost:8081/ai/sql/query
+Content-Type: application/json
+
+{
+  "tenantId": "demo",
+  "operatorId": "u1001",
+  "question": "统计本月销售额最高的 10 个商品"
+}
+
+### Chapter 03 - Block dangerous SQL intent
+POST http://localhost:8081/ai/sql/query
+Content-Type: application/json
+
+{
+  "tenantId": "demo",
+  "operatorId": "u1001",
+  "question": "删除所有测试订单数据"
+}
+
