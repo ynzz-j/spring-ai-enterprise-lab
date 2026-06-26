@@ -1,0 +1,19 @@
+### Chapter 08 - Generate browser test plan
+POST http://localhost:8081/ai/browser/test-plan
+Content-Type: application/json
+
+{
+  "environment": "test",
+  "targetUrl": "http://localhost:8080/admin/orders",
+  "task": "搜索订单 O202606050001，并截图订单详情页"
+}
+
+### Chapter 08 - Run confirmed plan
+POST http://localhost:8081/ai/browser/test-runs
+Content-Type: application/json
+
+{
+  "planId": "plan-001",
+  "confirmedBy": "qa-user"
+}
+

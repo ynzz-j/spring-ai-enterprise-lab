@@ -1,0 +1,11 @@
+@@ -1,6 +1,10 @@
+ public String createOrder(OrderRequest request) {
++    String userId = request.getUserId();
++    String productId = request.getProductId();
+     if (request.getQuantity() <= 0) {
+         throw new IllegalArgumentException("quantity must be positive");
+     }
++    // TODO check product stock later
+     return orderService.createOrder(userId, productId, request.getQuantity());
+ }
+

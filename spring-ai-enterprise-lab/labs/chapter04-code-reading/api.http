@@ -1,0 +1,9 @@
+### Chapter 04 - Generate code reading path
+POST http://localhost:8081/ai/code/reading-path
+Content-Type: application/json
+
+{
+  "projectName": "legacy-order",
+  "projectPath": "./legacy-codebase-sample",
+  "entrypoint": "OrderController#createOrder"
+}

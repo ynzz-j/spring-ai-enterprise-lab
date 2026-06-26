@@ -1,0 +1,27 @@
+{
+  "planId": "plan-001",
+  "status": "PENDING_CONFIRMATION",
+  "environment": "test",
+  "targetUrl": "http://localhost:8080/admin/orders",
+  "requiresApproval": true,
+  "steps": [
+    {
+      "action": "OPEN",
+      "target": "http://localhost:8080/admin/orders"
+    },
+    {
+      "action": "TYPE",
+      "inputRef": "orderIdInput",
+      "value": "O202606050001"
+    },
+    {
+      "action": "CLICK",
+      "ref": "searchButton"
+    },
+    {
+      "action": "SCREENSHOT",
+      "element": "orderDetailPanel",
+      "path": "artifacts/screenshots/order-detail.png"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "workflowId": "requirement-to-testcase",
+  "nodes": [
+    {
+      "id": "requirement-extract",
+      "type": "AI",
+      "description": "提取需求点"
+    },
+    {
+      "id": "api-design",
+      "type": "AI_WITH_APPROVAL",
+      "description": "生成接口草案并等待人工确认"
+    },
+    {
+      "id": "testcase-generate",
+      "type": "AI",
+      "description": "生成测试用例"
+    },
+    {
+      "id": "release-checklist",
+      "type": "AI",
+      "description": "生成发布检查清单"
+    }
+  ]
+}
+

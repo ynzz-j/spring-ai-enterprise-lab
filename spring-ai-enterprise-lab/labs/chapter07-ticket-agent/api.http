@@ -1,0 +1,22 @@
+### Chapter 07 - Analyze ticket
+POST http://localhost:8081/ai/tickets/analyze
+Content-Type: application/json
+
+{
+  "tenantId": "demo",
+  "ticketId": "T202606050001",
+  "title": "用户支付成功但订单仍显示未支付",
+  "content": "用户反馈 10:32 已支付，订单号 O202606050001，后台仍显示 CREATED，手机号 13800000000。",
+  "source": "customer-service"
+}
+
+### Chapter 07 - Confirm assignment
+POST http://localhost:8081/ai/tickets/assignments/confirm
+Content-Type: application/json
+
+{
+  "ticketId": "T202606050001",
+  "assignee": "pay-team-lisi",
+  "confirmedBy": "ops-admin"
+}
+

@@ -1,0 +1,22 @@
+### Chapter 06 - Ask knowledge base
+POST http://localhost:8081/ai/kb/ask
+Content-Type: application/json
+
+{
+  "tenantId": "demo",
+  "operatorId": "u1001",
+  "role": "developer",
+  "question": "订单状态 DELAYED 代表什么？"
+}
+
+### Chapter 06 - Unknown answer
+POST http://localhost:8081/ai/kb/ask
+Content-Type: application/json
+
+{
+  "tenantId": "demo",
+  "operatorId": "u1001",
+  "role": "developer",
+  "question": "公司明年的秘密定价策略是什么？"
+}
+

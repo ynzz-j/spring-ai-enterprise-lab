@@ -1,0 +1,20 @@
+### Chapter 09 - Start requirement workflow
+POST http://localhost:8081/ai/workflows/requirement-to-testcase
+Content-Type: application/json
+
+{
+  "tenantId": "demo",
+  "operatorId": "u1001",
+  "requirementText": "新增订单延迟预警功能：当订单超过 48 小时未发货时，系统需要提醒客服介入。"
+}
+
+### Chapter 09 - Approve API design node
+POST http://localhost:8081/ai/workflows/wf-001/approvals
+Content-Type: application/json
+
+{
+  "nodeId": "api-design",
+  "approved": true,
+  "approvedBy": "tech-lead"
+}
+

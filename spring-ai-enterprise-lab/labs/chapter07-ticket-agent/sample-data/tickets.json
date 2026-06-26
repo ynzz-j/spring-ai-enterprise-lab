@@ -1,0 +1,17 @@
+[
+  {
+    "ticketId": "T202606050001",
+    "title": "用户支付成功但订单仍显示未支付",
+    "category": "PAYMENT",
+    "priority": "HIGH",
+    "expectedAssignee": "pay-team-lisi"
+  },
+  {
+    "ticketId": "T202606050002",
+    "title": "用户咨询订单延迟发货",
+    "category": "ORDER_DELIVERY",
+    "priority": "MEDIUM",
+    "expectedAssignee": "order-team-zhangsan"
+  }
+]
+

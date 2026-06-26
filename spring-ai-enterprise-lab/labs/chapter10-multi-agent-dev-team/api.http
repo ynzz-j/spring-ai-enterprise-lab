@@ -1,0 +1,16 @@
+### Chapter 10 - Start multi-agent dev task
+POST http://localhost:8081/ai/dev-team/tasks
+Content-Type: application/json
+
+{
+  "tenantId": "demo",
+  "operatorId": "u1001",
+  "projectName": "legacy-order",
+  "requirement": "新增订单延迟预警功能：超过 48 小时未发货时提醒客服介入。",
+  "constraints": [
+    "老系统保持 Java 8",
+    "不能直接修改生产数据库",
+    "需要输出测试用例"
+  ]
+}
+

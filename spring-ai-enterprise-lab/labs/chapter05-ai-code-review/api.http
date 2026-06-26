@@ -1,0 +1,11 @@
+### Chapter 05 - Review git diff
+POST http://localhost:8081/webhooks/git/review
+Content-Type: application/json
+
+{
+  "repo": "legacy-order",
+  "branch": "feature/order-create",
+  "commitId": "abc123",
+  "diffText": "@@ -1,5 +1,8 @@\n public String createOrder(OrderRequest request) {\n+    String userId = request.getUserId();\n+    String productId = request.getProductId();\n     return orderService.createOrder(userId, productId, request.getQuantity());\n }"
+}
+
